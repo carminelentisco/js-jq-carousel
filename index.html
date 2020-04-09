@@ -6,19 +6,23 @@
     <title>Slider di immagini</title>
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/all.min.css">
-</head>
-<body>
-
-    
-    <i class="fas fa-angle-left"></i>
-    <img src="assets/aranzulla.gif" alt="Aranzulla">
-    <img src="assets/fasce.jpg" alt="Aranzulla" class="display_none">
-    <img src="assets/animale.jpg" alt="Aranzulla" class="display_none">
-    <img src="assets/album.jpg" alt="Aranzulla" class="display_none">
-    <i class="fas fa-angle-right"></i>
-
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="JS/main.js"></script>
+</head>
+
+<body>
+
+    
+    <i id="arrow-left" class="fas fa-angle-left"></i>
+    <div class="box">
+        <img src="assets/aranzulla.gif" alt="Aranzulla" class="first active">
+        <img src="assets/fasce.jpg" alt="Aranzulla" class="display_none">
+        <img src="assets/animale.jpg" alt="Aranzulla" class="display_none">
+        <img src="assets/album.jpg" alt="Aranzulla" class=" last display_none ">
+    </div>
+    <i id="arrow-right" class="fas fa-angle-right"></i>
+
+    
 </body>
 </html>
