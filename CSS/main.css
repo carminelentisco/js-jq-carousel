@@ -1,0 +1,29 @@
+/* --- General rules --- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: aquamarine;
+}
+
+/* Utilities */
+
+.display_none {
+    display: none;
+}
+
+/* Page */
+
+i {
+    font-size: 40px;
+    padding: 0 20px;
+}
+
