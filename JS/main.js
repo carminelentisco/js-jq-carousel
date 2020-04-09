@@ -10,15 +10,26 @@ jQuery(document).ready(function ($) {
 
         if ( $('.first').hasClass('active') ) {
             
-            $('.first').hide();
-            $('.first').next().show();
+            $('.first').removeClass('active').addClass('display_none');
+            $('.first').next().addClass('active');
 
         
         } else if ( $('.first').next().hasClass('active') ) {
             
-            console.log('ci siamo');
-        
+            $('.first').next().removeClass('active');           
+            $('.last').prev().addClass('active');
+
+        } else if ( $('.last').prev().hasClass('active')) {
+
+            $('.last').prev().removeClass('active');
+            $('.last').addClass('active');
+            
+        } else  {
+            $('.last').removeClass('active');
+            $('.first').addClass('active');
         }
+
+
 
     });
     
