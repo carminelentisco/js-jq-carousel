@@ -20,10 +20,15 @@ body {
     display: none;
 }
 
+.active {
+    display: block;
+}
+
 /* Page */
 
 i {
     font-size: 40px;
     padding: 0 20px;
+    cursor: pointer;
 }
 
