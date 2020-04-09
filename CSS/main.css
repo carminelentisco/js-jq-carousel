@@ -32,3 +32,31 @@ i {
     cursor: pointer;
 }
 
+.box {
+    position: relative;
+}
+
+.index {
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translatex(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.index-image {
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: #fff;
+}
+
+.index-image-color {
+    background-color: dodgerblue;
+}

@@ -7,16 +7,20 @@ jQuery(document).ready(function ($) {
 
     arrowRight.click(function () { 
         
-        if ( $('.first').hasClass('active') ) {
+        if (( $('.first').hasClass('active') ) && ( $('.first-index').hasClass('index-image-color') ) ) {
             
             $('.first').removeClass('active').addClass('display_none');
             $('.first').next().addClass('active');
-
+            $('.first-index').removeClass('index-image-color');
+            $('.first-index').next().addClass('index-image-color');
+            
         
-        } else if ( $('.first').next().hasClass('active') ) {
+        } else if ( ( $('.first').next().hasClass('active') ) && ( $('.first-index').next().hasClass('index-image-color'))) {
             
             $('.first').next().removeClass('active');           
-            $('.last').prev().addClass('active');
+            $('.last').prev().addClass('active');   
+            $('.first-index').next().removeClass('index-image-color');
+            $('.last-index').perv().addClass('index-image-color');
 
         } else if ( $('.last').prev().hasClass('active')) {
 
