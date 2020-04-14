@@ -8,16 +8,15 @@
 
 body {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: aquamarine;
 }
+
 
 /* Utilities */
 
 .display_none {
     display: none;
+    transition: display .4s;
 }
 
 .active {
@@ -25,6 +24,27 @@ body {
 }
 
 /* Page */
+
+h1,
+p {
+    padding: 20px 0;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color:  #000;
+    position: fixed;
+    top: 0;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 i {
     font-size: 40px;
@@ -59,4 +79,13 @@ i {
 
 .index-image-color {
     background-color: dodgerblue;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    color: #fff;
+    background-color: #000;
 }
